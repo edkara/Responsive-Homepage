@@ -1,0 +1,14 @@
+.column {
+  display: flex;
+  align-items: center;
+
+  &:nth-child(odd) {
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+
+  &:nth-child(even) {
+    padding-right: 0rem;
+    padding-left: 1rem;
+  }
+}

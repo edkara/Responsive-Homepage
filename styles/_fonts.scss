@@ -1,0 +1,28 @@
+$p-font-size: 1rem;
+$h1-font-size: 2rem;
+$h2-font-size: 2rem;
+$h3-font-size: 2rem;
+$a-font-size: 1.1rem;
+$margin-left-sec: 1rem;
+$margin-right-sec: 1rem;
+
+p {
+  padding-left: 1rem;
+  font-size: $p-font-size;
+}
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+a {
+  font-size: $a-font-size;
+}
