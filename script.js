@@ -1,10 +1,25 @@
 function unfold_nav_item() {
-    $("#icon").hover(function(){
-        $(".text").show("slide", {direction: "left"}, 1000);
-    }, function() {
-        $(".text").show("slide", {direction: "right"}, 1000);
-    })
-
-    let a = 5;
-    console.log(a);
+  alert("HAAAAALOOOOOOOOOO!");
 }
+
+function unfold_note() {
+  $("#note").click(function () {
+    $(this).toggleClass("open");
+  });
+}
+
+function sticked() {
+    let note = document.getElementById("note");
+    let notePos = note.getBoundingClientRect().bottom();
+    window.addEventListener("scroll", e => {
+        scrollPos = window.scrollY;
+        if(scrollPos < notePos) {
+
+        }
+    })
+}
+
+$(document).ready(function(){
+    unfold_note();
+    remove_logo_font();
+});

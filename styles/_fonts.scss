@@ -6,6 +6,12 @@ $a-font-size: 1.1rem;
 $margin-left-sec: 1rem;
 $margin-right-sec: 1rem;
 
+
+:root {
+  --green: #407a52;
+  --white: #fff;
+}
+
 p {
   padding-left: 1rem;
   font-size: $p-font-size;

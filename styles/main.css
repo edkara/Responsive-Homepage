@@ -48,10 +48,10 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #fff;
-  border-top: solid #407a52 1px;
-  border-bottom: solid #407a52 1px;
-  color: #407a52;
+  background-color: var(--white);
+  border-top: solid var(--green) 1px;
+  border-bottom: solid var(--green) 1px;
+  color: var(--green);
 }
 
 .navbar-section li {
@@ -62,25 +62,25 @@ section {
 }
 
 .navbar-section li:hover {
-  background-color: #407a52;
+  background-color: var(--green);
 }
 
 .navbar-section li:hover > .navbar-subnav {
   display: block;
-  background-color: #407a52;
+  background-color: var(--green);
 }
 
 .navbar-section li:hover > .navbar-second-sub {
   display: block;
-  background-color: #407a52;
+  background-color: var(--green);
 }
 
 .navbar-section li:hover a {
-  color: #fff;
+  color: var(--white);
 }
 
 .navbar-section li:hover i {
-  color: #fff;
+  color: var(--white);
 }
 
 .navbar-section i {
@@ -91,7 +91,7 @@ section {
 .navbar-section a {
   margin: 0.5rem;
   text-align: center;
-  color: #407a52;
+  color: var(--green);
   font-family: initial;
   font-weight: 400;
   font-size: 1.1rem;
@@ -108,7 +108,7 @@ section {
 .navbar-section .logo-font {
   font-weight: bold;
   font-size: 2rem;
-  color: #407a52;
+  color: var(--green);
 }
 
 .navbar-section .navbar-nav {
@@ -143,7 +143,7 @@ section {
   top: 0;
 }
 
-@media (max-width: 1128px) {
+@media (max-width: 1240px) {
   .navbar-section {
     display: inline-block;
     -webkit-box-pack: start;
@@ -151,13 +151,19 @@ section {
             justify-content: flex-start;
     border-top: unset;
     border-bottom: unset;
+    position: fixed;
+    left: 0;
+  }
+  .navbar-section .logo-font {
+    font-size: 0;
   }
   .navbar-section .column:last-child {
+    margin-top: 5rem;
     padding-left: 0;
   }
   .navbar-section .navbar-nav {
     display: inline-block;
-    padding-left: 0.4rem;
+    padding-left: 1rem;
   }
   .navbar-section .navbar-nav li {
     display: block;
@@ -207,6 +213,11 @@ section {
   }
 }
 
+:root {
+  --green: #407a52;
+  --white: #fff;
+}
+
 p {
   padding-left: 1rem;
   font-size: 1rem;
@@ -226,5 +237,79 @@ h3 {
 
 a {
   font-size: 1.1rem;
+}
+
+#note {
+  background-color: var(--green);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  height: 6rem;
+  z-index: -1;
+}
+
+#note a {
+  color: var(--white);
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.01vw;
+  cursor: pointer;
+}
+
+#note i {
+  color: var(--white);
+  font-size: 2rem;
+  margin: 0.2rem;
+  cursor: pointer;
+}
+
+#note .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50%;
+}
+
+#note .row .left-column {
+  height: 100%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  padding-left: 0.2rem;
+  padding-right: 0;
+}
+
+#note .row .right-column {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  height: 100%;
+  padding-left: 0.3rem;
+  padding-right: 0;
+  width: 0;
+  opacity: 0;
+  white-space: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#note.open .right-column {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  opacity: 1;
+}
+
+#note::after {
+  content: "";
+  display: block;
+  height: 100%;
+  margin-top: -3.25rem;
+  border-top: 0.12rem solid var(--white);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 /*# sourceMappingURL=main.css.map */
