@@ -11,7 +11,7 @@ section {
     border-top: solid var(--green) 1px;
     border-bottom: solid var(--green) 1px;
     color: var(--green);
-    //z-index später für image, muss groß sein
+    width: 100%;
     li {
         display: inline-block;
         position: relative;

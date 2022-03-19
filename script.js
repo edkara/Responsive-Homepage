@@ -1,11 +1,11 @@
 function unfold_nav_item() {
-  alert("HAAAAALOOOOOOOOOO!");
+    alert("HAAAAALOOOOOOOOOO!");
 }
 
 function unfold_note() {
-  $("#note").click(function () {
-    $(this).toggleClass("open");
-  });
+    $("#note").click(function() {
+        $(this).toggleClass("open");
+    });
 }
 
 function sticked() {
@@ -13,13 +13,13 @@ function sticked() {
     let notePos = note.getBoundingClientRect().bottom();
     window.addEventListener("scroll", e => {
         scrollPos = window.scrollY;
-        if(scrollPos < notePos) {
+        if (scrollPos < notePos) {
 
         }
     })
 }
 
-$(document).ready(function(){
+$(document).ready(function() {
     unfold_note();
-    remove_logo_font();
+    // remove_logo_font();
 });

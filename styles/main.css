@@ -64,6 +64,7 @@ section {
   border-top: solid var(--green) 1px;
   border-bottom: solid var(--green) 1px;
   color: var(--green);
+  width: 100%;
 }
 
 .navbar-section li {
