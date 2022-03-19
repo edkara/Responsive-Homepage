@@ -8,25 +8,37 @@
 }
 
 .column:nth-child(odd) {
-  padding-left: 0;
-  padding-right: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0;
 }
 
 .column:nth-child(even) {
-  padding-right: 0rem;
-  padding-left: 1rem;
+  padding-right: 0.5rem;
+  padding-left: 0;
 }
 
 header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: fixed;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 section {
@@ -96,6 +108,8 @@ section {
   font-weight: 400;
   font-size: 1.1rem;
   text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .navbar-section .logo {
@@ -107,8 +121,11 @@ section {
 
 .navbar-section .logo-font {
   font-weight: bold;
+  text-transform: uppercase;
   font-size: 2rem;
   color: var(--green);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .navbar-section .navbar-nav {
@@ -151,7 +168,6 @@ section {
             justify-content: flex-start;
     border-top: unset;
     border-bottom: unset;
-    position: fixed;
     left: 0;
   }
   .navbar-section .logo-font {
