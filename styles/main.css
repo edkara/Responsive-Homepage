@@ -90,7 +90,7 @@ section {
 }
 
 .navbar-section i {
-  font-size: 1.1rem;
+  font-size: 2rem;
   margin: 0.5rem;
   color: green;
 }
@@ -162,8 +162,8 @@ section {
   color: #407a52;
 }
 
-.navbar-section #menu-btn {
-  display: none;
+.navbar-section #search-btn {
+  cursor: pointer;
 }
 
 @media (max-width: 1240px) {
@@ -218,7 +218,7 @@ section {
     font-size: 0;
   }
   .navbar-section .navbar-nav i {
-    font-size: 1.5rem;
+    font-size: 2rem;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
@@ -230,6 +230,10 @@ section {
     display: unset;
     visibility: hidden;
     opacity: 0;
+  }
+  .navbar-section #search-btn {
+    cursor: pointer;
+    padding-left: 1rem;
   }
 }
 
@@ -251,6 +255,10 @@ h3 {
 }
 
 a {
+  font-size: 1.1rem;
+}
+
+i {
   font-size: 1.1rem;
 }
 
@@ -326,5 +334,98 @@ a {
   border-top: 0.12rem solid #fff;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.search-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10000;
+  -webkit-transform: translateY(-110%);
+          transform: translateY(-110%);
+}
+
+.search-form.active {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.search-form #close-search {
+  position: absolute;
+  top: 1rem;
+  right: 4rem;
+  cursor: pointer;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.search-form #close-search:hover {
+  color: #407a52;
+}
+
+.search-form #close-search i {
+  font-size: 3rem;
+}
+
+.search-form form {
+  width: 40rem;
+  margin: 0 2rem;
+  border-bottom: 0.2rem solid #fff;
+  padding-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.search-form form input {
+  width: 100%;
+  font-size: 1.2rem;
+  color: #fff;
+  text-transform: none;
+  background: none;
+  padding-right: 2rem;
+  border: none;
+}
+
+.search-form form input::-webkit-input-placeholder {
+  color: black;
+}
+
+.search-form form input:-ms-input-placeholder {
+  color: black;
+}
+
+.search-form form input::-ms-input-placeholder {
+  color: black;
+}
+
+.search-form form input::placeholder {
+  color: black;
+}
+
+.search-form form label {
+  font-size: 3rem;
+  cursor: pointer;
+  color: white;
+}
+
+.search-form form label:hover {
+  color: #407a52;
 }
 /*# sourceMappingURL=main.css.map */

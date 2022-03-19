@@ -4,6 +4,7 @@ $h1-font-size: 2rem;
 $h2-font-size: 2rem;
 $h3-font-size: 2rem;
 $a-font-size: 1.1rem;
+$i-font-size: 1.1rem;
 $margin-left-sec: 1rem;
 $margin-right-sec: 1rem;
 
@@ -26,4 +27,8 @@ h3 {
 
 a {
   font-size: $a-font-size;
+}
+
+i {
+  font-size: $i-font-size;
 }

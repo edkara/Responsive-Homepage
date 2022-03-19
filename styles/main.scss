@@ -1,7 +1,8 @@
-@import "../styles/_column.scss";
-@import "../styles/_header.scss";
-@import "../styles/_section.scss";
-@import "../styles/_fonts.scss";
-@import "../styles/note";
+@import "./column";
+@import "./header";
+@import "./section";
+@import "./fonts";
+@import "./note";
+@import "./search";
 main {
 }
