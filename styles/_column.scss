@@ -1,12 +1,14 @@
 .column {
   display: flex;
   align-items: center;
-
-  &:nth-child(odd) {
+  &:first-child {
     padding-left: 0.5rem;
     padding-right: 0;
   }
-
+  &:nth-child(odd) {
+    padding-left: 0;
+    padding-right: 0.5rem;
+  }
   &:nth-child(even) {
     padding-right: 0.5rem;
     padding-left: 0;

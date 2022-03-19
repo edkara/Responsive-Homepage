@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
-    <link href="../website-front-page/assets/fontawesome-free-6.0.0-web/css/all.min.css" rel="stylesheet" />
+    <link
+      href="../website-front-page/assets/fontawesome-free-6.0.0-web/css/all.min.css"
+      rel="stylesheet"
+    />
     <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -18,87 +20,92 @@
     <link rel="shortcut icon" href="#" />
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <section class="navbar-section">
-            <div class="column">
-                <img class="logo" src="./assets/images/teaser.png">
-                <a href="#" class="logo-font">Logo.</a>
-            </div>
+      <section class="navbar-section">
+        <div class="column">
+          <img class="logo" src="./assets/images/teaser.png" />
+          <a href="#" class="logo-font">Logo.</a>
+        </div>
 
-            <div class="column">
-                <ul class="navbar-nav">
+        <div class="column">
+          <ul class="navbar-nav">
+            <li>
+              <i class="fas fa-tachometer-alt"><a href="#">Home</a></i>
+            </li>
+            <li>
+              <i class="far fa-clone"><a href="#">About</a></i>
+            </li>
+            <li>
+              <i class="far fa-copy"><a href="#">Shop</a></i>
+            </li>
+            <li>
+              <i class="far fa-calendar-alt"><a href="#">Packages</a></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-address-card"><a href="#">Reviews</a></i>
+              <ul class="navbar-subnav">
+                <li>
+                  <i class="fa-solid fa-list-ol"><a href="#">Number</a></i>
+                  <ul class="navbar-second-sub">
                     <li>
-                        <i class="fas fa-tachometer-alt"><a href="#">Home</a></i>
+                      <i class="fa-solid fa-phone"><a href="#">Phone</a></i>
                     </li>
                     <li>
-                        <i class="far fa-clone"><a href="#">About</a></i>
+                      <i class="far fa-address-book"><a href="#">Fax</a></i>
                     </li>
-                    <li>
-                        <i class="far fa-copy"><a href="#">Shop</a></i>
-                    </li>
-                    <li>
-                        <i class="far fa-calendar-alt"><a href="#">Packages</a></i>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-address-card"><a href="#">Reviews</a></i>
-                        <ul class="navbar-subnav">
-                            <li>
-                                <i class="fa-solid fa-list-ol"><a href="#">Number</a></i>
-                                <ul class="navbar-second-sub">
-                                    <li>
-                                        <i class="fa-solid fa-phone"><a href="#">Phone</a></i>
-                                    </li>
-                                    <li>
-                                        <i class="far fa-address-book"><a href="#">Fax</a></i>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"><a href="#">E-Mail</a></i>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <i class="far fa-address-book"><a href="#">Blogs</a></i>
-                        <ul class="navbar-subnav">
-                            <li>
-                                <i class="fa-solid fa-laptop-code"><a href="#">Reviews</a></i>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-stamp"><a href="#">Hotels Searches</a></i>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </section>
+                  </ul>
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"><a href="#">E-Mail</a></i>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <i class="far fa-address-book"><a href="#">Blogs</a></i>
+              <ul class="navbar-subnav">
+                <li>
+                  <i class="fa-solid fa-laptop-code"><a href="#">Reviews</a></i>
+                </li>
+                <li>
+                  <i class="fa-solid fa-stamp"
+                    ><a href="#">Hotels Searches</a></i>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="column icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <a href="#" class="fa-solid fa-cart-shopping"></a>
+          <div id="search-btn" class="fas fa-search"></div>
+        </div>
+      </section>
     </header>
 
     <main>
-        <div id="note">
-            <div class="row">
-                <div class="row left-column">
-                    <i class="fa-solid fa-phone-volume"></i>
-                </div>
-                <div class="row right-column">
-                    <a href="tel:">+49 123 7322712</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="row left-column">
-                    <i class="fa-solid fa-at"></i>
-                </div>
-                <div class="row right-column">
-                    <a href="#">Anfrage senden</a>
-                </div>
-            </div>
+      <div id="note">
+        <div class="row">
+          <div class="row left-column">
+            <i class="fa-solid fa-phone-volume"></i>
+          </div>
+          <div class="row right-column">
+            <a href="tel:">+49 123 7322712</a>
+          </div>
         </div>
+        <div class="row">
+          <div class="row left-column">
+            <i class="fa-solid fa-at"></i>
+          </div>
+          <div class="row right-column">
+            <a href="#">Anfrage senden</a>
+          </div>
+        </div>
+      </div>
     </main>
     <footer></footer>
     <script type="text/javascript" src="script.js"></script>
-</body>
-
+  </body>
 </html>
