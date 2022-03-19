@@ -1,5 +1,5 @@
 #note {
-  background-color: var(--green);
+  background-color: #407a52;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -8,7 +8,7 @@
   z-index: -1;
 
   a {
-    color: var(--white);
+    color: #fff;
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
@@ -17,7 +17,7 @@
   }
 
   i {
-    color: var(--white);
+    color: #fff;
     font-size: 2rem;
     margin: 0.2rem;
     cursor: pointer;
@@ -26,8 +26,6 @@
   .row {
     display: flex;
     height: 50%;
-    //schauen
-    //width: inherit;
 
     .left-column {
       height: 100%;
@@ -60,7 +58,7 @@
     display: block;
     height: 100%;
     margin-top: -3.25rem;
-    border-top: 0.12rem solid var(--white);
+    border-top: 0.12rem solid #fff;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
