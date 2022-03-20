@@ -1,0 +1,46 @@
+.communication {
+  justify-content: space-around;
+  .cta-container {
+    width: 40rem;
+    .cta-highlight-heading-first {
+      font-size: 5rem;
+      color: black;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+    }
+    .cta-highlight-heading-second {
+      font-size: 5rem;
+      color: #407a52;
+      margin-top: -4.6rem;
+      margin-left: 1rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+    }
+    p {
+      line-height: 2;
+      color: black;
+      font-size: 1.5rem;
+      padding: 1rem 0;
+    }
+  }
+
+  .info {
+    margin-top: 6rem;
+    margin-left: 4rem;
+    h2 {
+      margin-bottom: 1.5rem;
+      color: black;
+      font-weight: 400;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    .divider {
+      flex-grow: 1;
+      border-bottom: 0.2rem solid black;
+      margin: 0.1rem;
+      margin-left: -4rem;
+    }
+  }
+}

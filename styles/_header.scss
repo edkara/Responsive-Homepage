@@ -10,4 +10,9 @@ header {
   left: 0;
   right: 0;
   width: 100%;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
 }

@@ -7,7 +7,7 @@ section {
 
 .navbar-section {
   justify-content: space-between;
-  background-color: #fff;
+  // background-color: #fff;
   color: #407a52;
   width: 100%;
   li {
@@ -18,11 +18,11 @@ section {
     &:hover {
       > .navbar-subnav {
         display: block;
-        background-color: #fff;
+        // background-color: #fff;
       }
       > .navbar-second-sub {
         display: block;
-        background-color: #fff;
+        // background-color: #fff;
       }
     }
   }
@@ -90,6 +90,10 @@ section {
 }
 
 @media (max-width: 1240px) {
+  html {
+    font-size: 75%;
+    scroll-padding-top: 7rem;
+  }
   .navbar-section {
     display: inline-block;
     justify-content: flex-start;

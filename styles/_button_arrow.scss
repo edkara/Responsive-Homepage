@@ -1,0 +1,25 @@
+.btn-with-arrow{
+    display: flex;
+    margin-left: auto;
+    text-transform: uppercase;
+    padding-right: 3rem;
+    position: relative;
+    align-items: center;
+    font-size: 1.833rem;
+    padding-bottom: 2.3rem;
+    text-transform: none;
+    color: #407a52;
+    &::after {
+        content: "";
+        background: url(../assets/images/button.jpg) no-repeat;
+        color: black;
+        margin-left: -9rem;
+        height: 2.5rem;
+        width: 2.5rem;
+        background-size: contain;
+        background-position: left center;
+    }
+    &:hover::after {
+        background-color: #407a52;
+    }
+}

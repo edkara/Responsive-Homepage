@@ -1,11 +1,12 @@
 #note {
-  background-color: #407a52;
+  background: none;
+  border: 0.2rem solid white;
   position: fixed;
   bottom: 0;
   right: 0;
   overflow: hidden;
   height: 6rem;
-  z-index: -1;
+  z-index: 1000;
 
   a {
     color: #fff;
@@ -61,5 +62,10 @@
     border-top: 0.12rem solid #fff;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+  }
+
+  &:hover {
+    background: #407a52;
+    color: white;
   }
 }

@@ -1,0 +1,30 @@
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid white;
+  color: white;
+  cursor: pointer;
+  background: none;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+  text-transform: capitalize;
+  text-decoration: none;
+
+  &:hover {
+    background: #407a52;
+    color: white;
+  }
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 2rem;
+  color: #407a52;
+}
+
+@media (max-width: 768px) {
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+}
