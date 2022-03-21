@@ -1,6 +1,6 @@
 #note {
   background: none;
-  border: 0.2rem solid white;
+  border: 0.2rem solid #407a52;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -9,7 +9,7 @@
   z-index: 1000;
 
   a {
-    color: #fff;
+    color: #407a52;
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
@@ -18,7 +18,7 @@
   }
 
   i {
-    color: #fff;
+    color: #407a52;
     font-size: 2rem;
     margin: 0.2rem;
     cursor: pointer;
@@ -59,13 +59,13 @@
     display: block;
     height: 100%;
     margin-top: -3.25rem;
-    border-top: 0.12rem solid #fff;
+    border-top: 0.12rem solid #407a52;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
 
   &:hover {
-    background: #407a52;
-    color: white;
+    background: wheat;
+    color: #407a52;
   }
 }
