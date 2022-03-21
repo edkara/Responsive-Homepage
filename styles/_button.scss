@@ -14,6 +14,10 @@
     background: #407a52;
     color: white;
   }
+
+  &.booking {
+    border: 0.2rem solid #407a52;
+  }
 }
 
 .swiper-button-next::after,

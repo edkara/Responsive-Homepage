@@ -1,0 +1,92 @@
+.destinations {
+  justify-content: center;
+  .box-container {
+    display: grid;
+    flex-wrap: wrap;
+    gap: 2rem;
+    .box {
+      flex: 1 1 20rem;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      .content {
+        padding: 2rem;
+      }
+      //for btn book now
+      a {
+        color: #407a52;
+        display: inline-block;
+        padding: 1rem 3rem;
+        font-size: 1.7rem;
+        &:hover {
+          color: white;
+        }
+      }
+      //for undertitle
+      h3 {
+        padding: 0;
+        color: #407a52;
+        font-size: 3rem;
+      }
+      img {
+        height: 10rem;
+        width: 100%;
+        object-fit: cover;
+      }
+      p {
+        padding-left: 1rem 0;
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+
+.stars {
+  i {
+    font-size: 1.7rem;
+    color: yellow;
+  }
+}
+
+.price {
+  font-size: 2rem;
+  color: #333;
+  padding-top: 1rem;
+  #first-price {
+    color: #666;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    &::after {
+      content: "\a";
+      white-space: pre;
+    }
+  }
+}
+
+.title {
+  text-align: center;
+  padding: 2.5rem 0;
+
+  span {
+    font-size: 3.5rem;
+    background-color: #407a52;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.2rem 1rem;
+    display: inline-block;
+
+    &.space {
+      background: none;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .title span {
+    font-size: 2.5rem;
+  }
+}
